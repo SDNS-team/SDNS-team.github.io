@@ -28,7 +28,7 @@ description: >- # this means to ignore newlines until "baseurl:"
 
 domain: sdns-team.github.io
 url: https://sdns-team.github.io
-baseurl: /
+baseurl: 
 
 markdown: kramdown
 
