@@ -10,9 +10,9 @@ tmp=tmp.md
 # remove frontmatter
 sed '1{/^---$/!q;};1,/^---$/d' $index > $indextmp
 
-cat $readmecontent > $tmp
+cat $indextmp > $tmp
 echo "" >> $tmp
-cat $indextmp >> $tmp
+cat $readmecontent >> $tmp
 
 rm $indextmp
 
@@ -21,7 +21,6 @@ tmpsize=$(wc -c <$tmp)
 
 if [ $readmesize -ne $tmpsize ]; then
     mv $tmp $readme
-    rm $tmp
     echo "Updated README.md!"
     exit 1
 fi
