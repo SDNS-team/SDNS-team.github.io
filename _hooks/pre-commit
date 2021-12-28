@@ -1,0 +1,31 @@
+#!/bin/sh
+
+
+index=index.md
+indextmp=index.md.tmp
+readmecontent=readme-content.md
+readme=README.md
+tmp=tmp.md
+
+# remove frontmatter
+sed '1{/^---$/!q;};1,/^---$/d' $index > $indextmp
+
+cat $readmecontent > $tmp
+echo "" >> $tmp
+cat $indextmp >> $tmp
+
+rm $indextmp
+
+readmesize=$(wc -c <$readme)
+tmpsize=$(wc -c <$tmp)
+
+if [ $readmesize -ne $tmpsize ]; then
+    mv $tmp $readme
+    rm $tmp
+    echo "Updated README.md!"
+    exit 1
+fi
+
+rm $tmp
+
+exit 0

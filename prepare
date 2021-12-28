@@ -1,0 +1,8 @@
+#!/bin/sh
+
+echo "Prepare started"
+
+rm ./.git/hooks/*
+cp -r ./_hooks/* ./.git/hooks
+
+echo "Prepare completed!"
