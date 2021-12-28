@@ -26,9 +26,9 @@ email: "swetozar.volkov@yandex.ru"
 description: >- # this means to ignore newlines until "baseurl:"
   todo
 
-domain: qoob23.github.io
-url: https://qoob23.github.io
-baseurl: /drlist-doc/
+domain: sdns-team.github.io
+url: https://sdns-team.github.io
+baseurl: /
 
 markdown: kramdown
 
@@ -39,7 +39,7 @@ remote_theme: "pmarsceill/just-the-docs"
 # Aux links for the upper right navigation
 aux_links:
   "GitHub":
-    - "https://github.com/qoob23/drlist-doc"
+    - "https://github.com/sdns-team/sdns-team.github.io"
 
 # Makes Aux links open in a new tab. Default is false
 aux_links_new_tab: true
@@ -52,14 +52,6 @@ heading_anchors: true
 
 include:
   - assets/
-
-# Footer "Edit this page on GitHub" link text
-gh_edit_link: true # show or hide edit this page link
-gh_edit_link_text: "Редактировать страницу на GitHub."
-gh_edit_repository: "https://github.com/qoob23/drlist-doc" # the github URL for your repo
-gh_edit_branch: "main" # the branch that your docs is served from
-# gh_edit_source: docs # the source that your files originate from
-gh_edit_view_mode: "tree" # "tree" or "edit" if you want the user to jump into the editor immediately
 
 # exclude:
 #   - .sass-cache/
