@@ -21,7 +21,7 @@ encoding: "UTF-8"
 lang: "en"
 timezone: "Europe/Moscow"
 
-title: "<название приложения> - основная дока"
+title: "SDNS-team"
 email: "swetozar.volkov@yandex.ru"
 description: >- # this means to ignore newlines until "baseurl:"
   todo
