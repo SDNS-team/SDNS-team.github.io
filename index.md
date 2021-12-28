@@ -5,4 +5,4 @@ permalink: /
 nav_order: 0
 ---
 
-todo: описание проекта
+Первое приложение SDNS-team "Birthday app"
