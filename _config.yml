@@ -21,10 +21,10 @@ encoding: "UTF-8"
 lang: "en"
 timezone: "Europe/Moscow"
 
-title: "Software Design"
+title: "<название приложения> - основная дока"
 email: "swetozar.volkov@yandex.ru"
 description: >- # this means to ignore newlines until "baseurl:"
-  My personal notes and abstracts on software design
+  todo
 
 domain: qoob23.github.io
 url: https://qoob23.github.io
